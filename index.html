@@ -7,23 +7,28 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="card">
-        <img src="images/el.jpg" alt="Profile Picture" data-testid="profilePicture">
-        <h2 data-testid="fullName">Elton Asamoah-Mantey</h2>
-        <h3 data-testid="jobTitle">Frontend Developer</h3>
-        <p data-testid="shortBio">
-          I am dynamic frontend developer skilled in HTML, CSS, JavaScript, and React. I am passionate about crafting responsive and user-friendly websites and web applications through clean and efficient code that transforms designs into functional digital experiences. I am eager to contribute to innovative projects that create meaningful impact in the digital realm. 
-          Let's connect.
-        </p>
-        <p data-testid="currentLocation">Accra, Ghana</p>
-        <p data-testid="emailAddress">eltonasamoah007@gmail.com</p>
-        <div class="social-links" data-testid="socialLinks">
-            <a href="https://github.com/elton-codes" target="_blank">GitHub</a> |
-            <a href="https://www.linkedin.com/in/eltonasamoahmantey" target="_blank">LinkedIn</a> |
-            <a href="https://x.com/elton_asamoah" target="_blank">Twitter</a>
+    <div class="profile-card">
+        <div class="profile-header">
+            <img src="./images/el.jpg" alt="Profile Picture" class="profile-img" data-testid="profilePicture">
         </div>
-        <p data-testid="currentTimeUTC" id="utc-time"></p>
+        <div class="profile-body">
+            <h2 data-testid="fullName">Elton Asamoah-Mantey</h2>
+            <h3 data-testid="jobTitle">Frontend Web Developer</h3>
+            <p data-testid="shortBio">
+              I'm a dynamic frontend developer skilled in HTML, CSS, JavaScript, and React. I am passionate about crafting responsive and user-friendly websites through clean and efficient code that transforms designs into functional digital experiences. <br> 
+              Let's connect.
+            </p>
+            <p data-testid="currentLocation">Accra, Ghana</p>
+            <p>Email: <a href="mailto:eltonasamoah007@gmail.com" data-testid="emailAddress">eltonasamoah007@gmail.com</a></p>
+            <div class="social-links" data-testid="socialLinks">
+                <a href="https://github.com/elton-codes" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/eltonasamoahmantey" target="_blank">LinkedIn</a>
+                <a href="https://x.com/elton_asamoah" target="_blank">Twitter</a>
+            </div>
+            <p class="utc-time" data-testid="currentTimeUTC"></p>
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
